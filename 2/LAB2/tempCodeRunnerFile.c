@@ -1,0 +1,1 @@
+printf("%p %p\n", ptr, ptr->next);
