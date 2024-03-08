@@ -63,8 +63,6 @@ void InsertNodeEnd(struct node **start, int val){
 
     if(*start == NULL){
         *start = newnode;
-        // printf("Node %p\n", (*start));
-        // printf("Previous %p and Next %p !!\n",(*start)->prev, (*start)->next);
         return;
     }
     ptr = *start;
@@ -73,8 +71,6 @@ void InsertNodeEnd(struct node **start, int val){
     }
     ptr->next = newnode;
     newnode->prev = ptr;
-    // printf("Node %p value> %d\n", ptr, ptr->data);
-    // printf("Previous %p and Next %p !!\n", ptr->prev, ptr->next);
     
 }
 

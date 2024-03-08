@@ -20,7 +20,7 @@ struct node* createnode(int data) {
 	newnode->right = NULL;
 	return newnode;
 }
-
+// Insert on the left of the node
 struct node* insertLeft(struct node* root, int data) {
 	root->left = createnode(data);
 	return root ;

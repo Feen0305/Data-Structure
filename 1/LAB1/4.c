@@ -27,10 +27,6 @@ void inputdict(struct dict *dic, int size){
     for(int i=0; i<size; i++){
         scanf(" %s %s", dic[i].key, dic[i].value);
     }
-    //debug
-    // for(int i=0; i<size; i++){
-    //     printf("%s %s\n", dic[i].key, dic[i].value);
-    // }
 }
 
 void editdict(struct dict *dic, int size){ //for editing the dictionary

@@ -68,12 +68,6 @@ void subset_get(int* set_elements, int* set_length, int universal[], int length_
         }
     }
 
-    //debug
-    // printf("\n%d\n", count);
-    // for(int i = 0; i<count; i++){
-    //         printf("%d ", elements[i]);
-    //     }
-
     *set_length = count;
     count = 0;
     for(int i=0; i<*set_length; i++){
@@ -81,11 +75,10 @@ void subset_get(int* set_elements, int* set_length, int universal[], int length_
         for(int j=0; j<length_universal; j++){
             if(set_elements[i] == universal[j]){
                 check += 1;
-                //printf("\nelement >%d & universal >%d", elements[i], universal[j]);
             }
         }
         if(check > 0){
-            set_length[count] = set_length[i];
+            set_elements[count] = set_elements[i];
             count += 1;
         }
     }
@@ -162,7 +155,6 @@ void Difference(int set1[], int set2[], int length_set1, int length_set2, int un
                 check = 1;
                 break;
             }
-            // printf("set1>%d set2>%d\n", set1[i], set2[j]);
         }
         if(check == 0){
             difference_elements[count] = set1[i];
