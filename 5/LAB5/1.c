@@ -1,5 +1,5 @@
 //Phoorin Chinphuad 66070501043
-//Lab 6.1: Tree Construction
+//Lab 5.1: Tree Construction
 
 #include <stdio.h>
 #include <stdlib.h>
