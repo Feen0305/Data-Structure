@@ -121,7 +121,7 @@ void display(int dst[], int pre[], int size, int initial) {
     if(i==initial || dst[i] == INFINITY){
       continue;
     }
-    printf("source to %d distance = %d and it from %d node\n", i, dst[i], pre[i]);
+    printf("source to %d distance = %d and pre vertex is %d\n", i, dst[i], pre[i]);
   }
   printf("\n");
 }
@@ -160,3 +160,24 @@ void displaygph(struct Graph *graph){
 
     return;
 }
+
+/*test case
+1. no negative cycle
+5 7
+0 1 2
+0 2 -3
+1 2 4
+1 3 -2
+2 3 -1
+2 4 -4
+3 4 5
+
+2. negative cycle
+5 6
+0 1 2
+1 2 -1
+2 3 3
+2 4 4
+3 1 -3
+3 4 2
+*/
